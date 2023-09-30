@@ -1,0 +1,496 @@
+@font-face {
+  font-family: spline-sans;
+  src: url(Spline_Sans_Mono/SplineSansMono-VariableFont_wght.ttf);
+}
+
+/*
+font-family: 'Caprasimo', cursive;
+font-family: 'Caveat', cursive;
+font-family: 'Crimson Text', serif;
+font-family: 'Dancing Script', cursive;
+font-family: 'La Belle Aurore', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Pacifico', cursive;
+*/
+
+body {
+  margin: 0;
+  background-color: #c7f9cc;
+  position: 0;
+  opacity: 0;
+  animation: fadeInRight 1s forwards;
+  overflow-x: hidden;
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff6f6;
+  font-family: spline-sans;
+  padding: 5px 0 0 0;
+}
+
+nav a:hover {
+  color: grey;
+  transform: scale(1.1);
+  transition: 0.5s ease;
+  box-shadow: 0 5px 0 0;
+}
+
+nav ul {
+  margin-top: 17px;
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+nav li a {
+  padding: 10px;
+}
+.title {
+  font-family: spline-sans;
+  color: #22577a;
+  margin-top: 10px;
+  font-size: 24px;
+  padding-right: 20px;
+}
+
+/* Section 1 Styles ------------------------------------------------------------------------------------------------- */
+
+#sec-1 {
+  min-height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(Image/dose-juice-sTPy-oeA3h0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-box {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(236, 228, 228, 0.8);
+  border: 5px solid #4e4a4a;
+  box-shadow: 2px black;
+}
+
+.text-box:hover {
+  transform: scale(1.1);
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.text-box h3 {
+  margin: 30px 0;
+}
+
+.text-box h1 {
+  color: #57cc99;
+}
+
+.text-box p {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title-1 {
+  color: #22577a;
+  font-size: 35px;
+}
+/* Section 2 Styles ------------------------------------------------------------------------------------------------- */
+
+#sec-2 {
+  justify-content: center;
+  margin-top: 5%;
+  align-items: center;
+  text-align: center;
+  width: auto;
+}
+
+.title-2 {
+  font-family: "Caveat", cursive;
+  color: #22577a;
+  font-size: 40px;
+  margin: 0;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.container {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+.opt-1,
+.opt-2 {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #57cc99;
+  border: 2px solid #6e6a6a;
+  box-shadow: 2px black;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.opt-1:hover,
+.opt-2:hover {
+  transform: scale(1.1);
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.opt-1 img,
+.opt-2 img {
+  margin: 5px auto;
+}
+
+.opt-1 h1,
+.opt-2 h1 {
+  color: #22577a;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+/* Section 3 Styles ------------------------------------------------------------------------------------------------- */
+
+#sec-3 {
+  width: auto;
+  margin-top: 4%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+
+.title-3 {
+  color: #22577a;
+  font-family: "Caveat", cursive;
+  text-align: center;
+  font-size: 40px;
+}
+.topic-container {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box-content {
+  display: flex;
+}
+.con-1,
+.con-2,
+.con-3 {
+  width: 230px;
+  height: 320px;
+  background-color: #009688;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.con-1:hover,
+.con-2:hover,
+.con-3:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.con-1 img {
+  width: 200px;
+  height: 200px;
+  margin: 5% auto;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.con-1 p {
+  width: 200px;
+  display: -webkit-box;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 auto;
+}
+
+.con-1 h2 {
+  margin: 5px 0 0 0;
+  color: #57cc99;
+  font-family: 'Poppins', sans-serif;
+}
+
+.con-2 img {
+  width: 200px;
+  height: 200px;
+  margin: 5% auto;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.con-2 p {
+  width: 200px;
+  display: -webkit-box;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 auto;
+}
+
+.con-2 h2 {
+  margin: 5px 0 0 0;
+  color: #57cc99;
+  font-family: 'Poppins', sans-serif;
+}
+
+.con-3 img {
+  width: 200px;
+  height: 200px;
+  margin: 5% auto;
+  bottom: 0;
+  border-radius: 10px;
+}
+
+.con-3 p {
+  width: 200px;
+  display: -webkit-box;
+  font-family: 'Poppins', sans-serif;
+  color: #FFFFFF;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 auto;
+}
+
+.con-3 h2 {
+  margin: 5px 0 0 0;
+  color: #57cc99;
+  font-family: 'Poppins', sans-serif;
+}
+
+#sec-4 {
+  margin-top: 8%;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  height: 280px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  transition: max-width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.navigation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation button {
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #57cc99;
+  color: white;
+  cursor: pointer;
+  margin-top: 0%;
+  margin-bottom: 5%;
+}
+
+.card h2 {
+  color: #57cc99;
+  font-family: "Caveat", cursive;
+}
+
+.card p {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  font-family: "Dancing Script", cursive;
+  margin: 15% 0;
+}
+
+.card p.fade-in {
+  opacity: 1;
+}
+
+.card p.fade-out {
+  opacity: 0;
+}
+
+/* ----------------------------------------------- Section 5 styles --------------------------------------------------*/
+#sec-5 {
+  justify-content: center;
+  text-align: center;
+  margin-top: 8%;
+  width: auto;
+}
+
+#sec-5 img {
+  width: 50px;
+  position: relative;
+}
+
+#sec-5 h1 {
+  font-family: "Caveat", cursive;
+  font-size: 60px;
+  letter-spacing: 3px;
+  bottom: 0%;
+  color: #22577a;
+}
+
+#sec-5 p {
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  width: 500px;
+  color: #333333;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.btn-4 {
+  width: 180px;
+  height: 40px;
+  margin: 3%;
+  border-radius: 10px;
+  background-color: #333333;
+  font-weight: bold;
+  font-family: spline-sans;
+  color: #80ed99;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.btn-4:hover {
+  background-color: #22577a;
+  transition: 0.5s ease;
+}
+
+footer {
+  margin: 0;
+  padding: 10px;
+  background-color: transparent;
+  font-family: spline-sans;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/*-----------------------------------JAVASCRIPT EFFECT-------------------------------------*/
+.slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-left.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-right.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.zoom-in.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slide-down {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-down.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.rotate {
+  opacity: 0;
+  transform: rotate(-30deg);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.rotate.active {
+  opacity: 1;
+  transform: rotate(0);
+}

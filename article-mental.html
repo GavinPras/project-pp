@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        position: fixed;
+        z-index: 2;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .cover-exe {
+        position: relative;
+        background-image: url(Image/mental-c.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 50vh;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .cover-exe h1 {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        color: white;
+        width: 600px;
+        text-align: center;
+      }
+      section {
+        margin: 50px;
+      }
+      img {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .content {
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      .content p {
+        text-align: justify;
+      }
+
+      footer {
+        position: relative;
+      }
+
+      @media screen and (max-width: 768px) {
+        .cover-top h1 {
+          width: 80%;
+          font-size: 24px;
+        }
+
+        .content {
+          margin: 20px;
+        }
+
+        img {
+          max-width: 100%;
+        }
+
+        .p-1,
+        .p-2,
+        .p-3,
+        .p-4,
+        .p-5,
+        .p-6 {
+          padding: 20px;
+        }
+      }
+
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+        nav ul {
+          margin-left: 25%;
+        }
+      }
+
+      @media screen and (min-width: 1025px) {
+        nav ul {
+          margin-left: 36%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1 class="title">HealthPlus +</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#sec-2">Content</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+
+    <section class="cover-exe">
+      <h1>6 CARA MENJAGA MENTAL TETAP SEHAT</h1>
+    </section>
+
+    <section class="content">
+      <div class="p-1">
+        <h3>1. Praktikkan Self-Care</h3>
+        <img src="image/self-care.jpg" alt="self-care" />
+        <p>
+          Merawat diri sendiri adalah langkah penting dalam menjaga kesehatan mental. Aktivitas self-care, seperti berjalan-jalan santai, merendam diri dalam mandi hangat, atau menikmati hobi yang
+          dicintai, membantu meredakan stres dan meningkatkan suasana hati. Memiliki waktu untuk diri sendiri juga memberi kesempatan untuk merenung dan menghadapi perasaan serta pikiran yang mungkin
+          muncul. Merawat diri sendiri adalah bentuk penghargaan terhadap diri sendiri, yang memainkan peran penting dalam membangun rasa penghargaan diri dan kesejahteraan mental secara keseluruhan.
+        </p>
+      </div>
+
+      <div class="p-2">
+        <h3>2. Jaga Pola Tidur Yang Baik</h3>
+        <img src="image/sleep-patterns.jpg" alt="clock" />
+        <p>
+          Kualitas tidur memiliki dampak besar pada kesehatan mental. Menjaga pola tidur yang teratur dan memiliki lingkungan tidur yang nyaman dapat membantu Anda tidur lebih nyenyak dan bangun
+          dengan perasaan segar. Tidur yang cukup dan berkualitas membantu memulihkan otak dan tubuh, serta mengoptimalkan proses kognitif seperti pemrosesan informasi dan konsolidasi memori. Dengan
+          tidur yang cukup, Anda juga lebih mampu mengatasi stres dan tantangan harian dengan lebih baik, karena tubuh dan pikiran Anda telah mendapatkan istirahat yang diperlukan.
+        </p>
+      </div>
+
+      <div class="p-3">
+        <h3>3. Lakukan Aktivitas Fisik</h3>
+        <img src="image/physact.jpg" alt="physical-activity" />
+        <p>
+          Olahraga secara fisik memiliki dampak positif pada kesehatan mental. Ketika Anda berolahraga, tubuh melepaskan endorfin, hormon alami yang mengurangi stres dan meningkatkan suasana hati. Ini
+          dapat membantu Anda merasa lebih baik secara emosional dan meningkatkan energi. Aktivitas fisik juga memberi Anda kesempatan untuk merasa terhubung dengan tubuh Anda, mengurangi kecemasan,
+          dan meningkatkan kepercayaan diri. Memilih jenis olahraga yang sesuai dengan preferensi Anda membantu membangun kebiasaan yang berkelanjutan dan menyenangkan untuk menjaga kesehatan mental
+          Anda.
+        </p>
+      </div>
+
+      <div class="p-4">
+        <h3>4. Pertahankan Hubungan Sosial Yang Positif</h3>
+        <img src="image/social-realition.jpg" alt="social-realition" />
+        <p>
+          Interaksi sosial adalah faktor penting dalam menjaga kesehatan mental. Berinteraksi dengan keluarga, teman, dan anggota komunitas dapat memberikan dukungan emosional, meredakan kesepian, dan
+          meningkatkan perasaan kebahagiaan. Hubungan yang positif juga memberikan tempat untuk berbicara tentang perasaan dan pikiran Anda, yang membantu Anda merasa didengar dan dipahami. Terlibat
+          dalam kegiatan sosial juga dapat memicu perasaan kegembiraan dan kepuasan, serta membantu membangun hubungan yang saling mendukung.
+        </p>
+      </div>
+
+      <div class="p-5">
+        <h3>5. Praktikkan Relaksasi Dan Meditasi</h3>
+        <img src="image/meditation.jpg" alt="meditation" />
+        <p>
+          Melakukan latihan relaksasi dan meditasi merupakan cara efektif untuk meredakan stres dan menjaga keseimbangan mental. Melalui teknik pernapasan dalam dan fokus pada saat ini, Anda dapat
+          mengurangi kegelisahan dan merangsang respons relaksasi dalam tubuh. Praktik meditasi secara teratur juga dapat meningkatkan kepekaan terhadap perasaan dan memberi Anda alat untuk mengatasi
+          tantangan mental dengan lebih baik.
+        </p>
+      </div>
+
+      <div class="p-6">
+        <h3>6. Ketahui Batas Anda</h3>
+        <img src="image/know-y-l.jpg" alt="know-your-limits" />
+        <p>
+          Mengetahui kapan untuk mengambil istirahat dan memberi diri sendiri waktu untuk memulihkan diri adalah kunci dalam menjaga kesehatan mental. Menghormati batas Anda sendiri dan menghindari
+          terlalu banyak tuntutan pada diri sendiri membantu mencegah kelelahan fisik dan mental yang berlebihan. Mengatur batas juga membantu Anda menjaga kualitas hidup yang seimbang dan
+          memprioritaskan kesejahteraan pribadi.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

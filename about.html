@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="responsive-style.css" />
+    <title>Document</title>
+    <style>
+      @font-face {
+        font-family: spline-sans;
+        src: url(Spline_Sans_Mono/SplineSansMono-VariableFont_wght.ttf);
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Caveat&family=Crimson+Text&family=Dancing+Script&family=La+Belle+Aurore&family=Open+Sans:wght@300;500;700&family=Pacifico&display=swap");      
+      @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,500&display=swap");
+
+      body {
+        margin: 0;
+        background-color: #c7f9cc;
+        position: 0;
+        height: 2000px;
+        font-family: 'Nunito Sans', sans-serif;
+      }
+
+      /* Navigation Styles */
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #fff6f6;
+        font-family: spline-sans;
+        padding: 5px 0 0 0;
+      }
+
+      nav a:hover {
+        color: grey;
+        transform: scale(1.1);
+        transition: 0.25s ease;
+        box-shadow: 0 5px 0 0;
+      }
+
+      nav ul {
+        margin-top: 17px;
+        display: flex;
+      }
+
+      nav li {
+        list-style: none;
+        margin: 0 15px;
+      }
+
+      nav li a {
+        padding: 10px;
+      }
+      .title {
+        font-family: spline-sans;
+        color: #22577a;
+        margin-top: 10px;
+        font-size: 24px;
+        padding-right: 20px;
+      }
+      #sec-1 {
+        min-height: 100vh;
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(Image/sma-suluh.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      #sec-1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
+      }
+
+      .hero-box {
+        background-color: rgba(221, 230, 223, 0.5);
+        height: auto;
+        width: 900px;
+        border-radius: 10px;
+      }
+      #sec-1 p {
+        font-size: 50px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        filter: brightness(100%);
+        font-family: "Open Sans", sans-serif;
+      }
+      .animate-character {
+        text-transform: uppercase;
+        background-image: linear-gradient(-225deg, #eeeeee 0%, #d9bcf8 29%, #d1bcc3 67%, #cad6c3 100%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        color: #fff;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: textclip 2s linear infinite;
+        font-size: 90px;
+      }
+
+      @keyframes textclip {
+        to {
+          background-position: 200% center;
+        }
+      }
+
+      .sec-2 {
+        text-align: center;
+      }
+
+      .box-container {
+        text-align: center;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px 0;
+        place-items: center;
+      }
+
+      .box-container p {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        color: white;
+      }
+
+      .box-container h1 {
+        margin-top: 5px;
+      }
+
+      .profile-img {
+        margin-top: 3px;
+        width: 150px;
+        border-radius: 50%;
+      }
+
+      .profile-img:hover {
+        cursor: pointer;
+        transition: 0.5s ease;
+        transform: rotate(360deg);
+      }
+
+      .box-1,
+      .box-2,
+      .box-3,
+      .box-4,
+      .box-5,
+      .box-6 {
+        background-color: #fff6f6;
+        box-shadow: 10px #22577a;
+        border-radius: 10px;
+        width: 180px;
+        height: 270px;
+        margin: 10px;
+        padding: 5px;
+      }
+
+      .icon {
+        width: 40px;
+      }
+
+      .icon:hover {
+        cursor: pointer;
+        transition: 0.5s ease;
+        transform: rotate(360deg);
+      }
+          
+      .box-1 h3 {
+        margin-bottom: 5px;
+      }
+      .box-2 h3 {
+        margin-bottom: 5px;
+      }
+      .box-3 h3 {
+        margin-bottom: 5px;
+      }
+      .box-4 h3 {
+        margin-bottom: 5px;
+      }
+      .box-5 h3 {
+        margin-bottom: 5px;
+      }
+      .box-6 h3 {
+        margin-bottom: 5px;
+      }
+
+      .box-1 h5 {
+        color: #22577a;
+        margin: 5px 0;
+      }
+      .box-2 h5 {
+        color: #22577a;
+        margin: 5px 0;
+      }
+      .box-3 h5 {
+        color: #22577a;
+        margin: 5px 0;
+      }
+      .box-4 h5 {
+        color: #22577a;
+        margin: 5px 0;
+      }
+      .box-5 h5 {
+        color: #22577a;
+        margin: 5px 0;
+      }
+      .box-6 h5 {
+        color: #22577a;
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <nav>
+        <h1 class="title">HealthPlus +</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#sec-2">Content</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </body>
+
+  <section id="sec-1">
+    <div class="hero-box">
+      <p class="animate-character"><b>We Are From</b></p>
+      <p class="animate-character"><b>SMA SULUH JAKARTA</b></p>
+    </div>
+  </section>
+
+  <section class="sec-2">
+    <h1 style="font-family: 'spline-sans'">OUR TEAMS</h1>
+    <div class="box-container">
+      <div class="box-1">
+        <img src="profile.jpg" alt="kita-ikuyo" class="profile-img" />
+        <h3>Kita Ikuyo</h3>
+        <h5>Group Leader</h5>
+        <a href=""><img src="icon/icons8-instagram-48.png" alt="instagram-icon" class="icon" /></a>
+        <a href=""><img src="icon/icons8-facebook-48.png" alt="facebook-icon" class="icon" /></a>
+        <a href=""><img src="icon/icons8-mail-48.png" alt="icon-mail" class="icon" /></a>
+      </div>
+      <div class="box-2">
+        <img src="profile.jpg" alt="kita-ikuyo" class="profile-img" />
+        <h3>Kita Ikuyo</h3>
+        <h5>Group Leader</h5>
+        <a href=""><img src="icon/icons8-instagram-48.png" alt="instagram-icon" class="icon" /></a>
+        <a href=""><img src="icon/icons8-facebook-48.png" alt="facebook-icon" class="icon" /></a>
+        <a href=""><img src="icon/icons8-mail-48.png" alt="icon-mail" class="icon" /></a>
+      </div>
+      <div class="box-3">
+        <img src="profile.jpg" alt="kita-ikuyo" class="profile-img" />
+        <h3>Kita Ikuyo</h3>
+        <h5>Group Leader</h5>
+        <a href=""><img src="icon/icons8-instagram-48.png" alt="instagram-icon" class="icon" /></a>
+        <a href=""><img src="icon/icons8-facebook-48.png" alt="facebook-icon" class="icon" /></a>
+        <a href=""><img src="icon/icons8-mail-48.png" alt="icon-mail" class="icon" /></a>
+      </div>
+      <div class="box-4">
+        <img src="profile.jpg" alt="kita-ikuyo" class="profile-img" />
+        <h3>Kita Ikuyo</h3>
+        <h5>Group Leader</h5>
+        <a href=""><img src="icon/icons8-instagram-48.png" alt="instagram-icon" class="icon" /></a>
+        <a href=""><img src="icon/icons8-facebook-48.png" alt="facebook-icon" class="icon" /></a>
+        <a href=""><img src="icon/icons8-mail-48.png" alt="icon-mail" class="icon" /></a>
+      </div>
+      <div class="box-5">
+        <img src="profile.jpg" alt="kita-ikuyo" class="profile-img" />
+        <h3>Kita Ikuyo</h3>
+        <h5>Group Leader</h5>
+        <a href=""><img src="icon/icons8-instagram-48.png" alt="instagram-icon" class="icon" /></a>
+        <a href=""><img src="icon/icons8-facebook-48.png" alt="facebook-icon" class="icon" /></a>
+        <a href=""><img src="icon/icons8-mail-48.png" alt="icon-mail" class="icon" /></a>
+      </div>
+      <div class="box-6">
+        <img src="profile.jpg" alt="kita-ikuyo" class="profile-img" />
+        <h3>Kita Ikuyo</h3>
+        <h5>Group Leader</h5>
+        <a href=""><img src="icon/icons8-instagram-48.png" alt="instagram-icon" class="icon" /></a>
+        <a href=""><img src="icon/icons8-facebook-48.png" alt="facebook-icon" class="icon" /></a>
+        <a href=""><img src="icon/icons8-mail-48.png" alt="icon-mail" class="icon" /></a>
+      </div>
+    </div>
+  </section>
+</html>

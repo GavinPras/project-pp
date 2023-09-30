@@ -1,0 +1,171 @@
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction: column;
+  }
+  nav ul {
+    margin-top: 0;
+    padding-left: 0;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+  }
+
+  #sec-1 {
+    min-height: 100vh;
+    justify-content: center;
+    background-size: contain;
+  }
+
+  .text-box {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    background-color: rgba(236, 228, 228, 0.5);
+  }
+
+  .text-box h3 {
+    font-size: 12px;
+  }
+
+  .text-box p {
+    font-family: "Caveat", cursive;
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .title-1 {
+    font-size: 20px;
+  }
+
+  .box-content {
+    flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+  }
+
+  .slide-left,
+  .slide-down,
+  .slide-right {
+    width: 100%; /* Mengisi lebar maksimum pada layar kecil */
+    margin: 10px 0; /* Menambahkan margin agar tidak terlalu dekat satu sama lain */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+  }
+
+  #sec-2 {
+    margin: 0;
+  }
+
+  #sec-3 {
+    margin: 0;
+  }
+  #sec-4 {
+    margin: 0;
+  }
+
+  .title-2 {
+    font-size: 25px;
+  }
+
+  .title-3 {
+    font-size: 25px;
+  }
+
+  .card {
+    max-width: 100%; /* Mengubah lebar maksimal menjadi 100% */
+    height: auto; /* Mengubah tinggi menjadi otomatis */
+  }
+
+  #sec-5 h1 {
+    font-size: 24px;
+  }
+
+  #sec-5 p {
+    font-size: 16px;
+    width: 300px;
+  }
+  .btn-4 {
+    margin-top: 5%;
+  }
+}
+
+/* Media Query for Medium Screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  nav ul {
+    margin-left: 25%;
+  }
+
+  .sec-1 img {
+    padding: 100px 0;
+  }
+
+  .text {
+    padding: 100px 50px;
+  }
+
+  .text h1 {
+    font-size: 40px;
+  }
+
+  .text p {
+    font-size: 16px;
+  }
+
+  .container {
+    margin: 50px auto;
+  }
+}
+
+/* Media Query for Large Screens */
+@media screen and (min-width: 1025px) {
+  nav ul {
+    margin-left: 36%;
+  }
+
+  .sec-1 img {
+    padding: 160px 160px 100px 0;
+  }
+
+  .text {
+    flex-direction: column;
+  }
+
+  .text h1 {
+    font-size: 50px;
+    flex-direction: column;
+  }
+
+  .text p {
+    font-size: 15px;
+  }
+
+  .container {
+    margin: 80px 270px;
+  }
+
+  .navpic {
+    flex-direction: column;
+  }
+  /* Footer Styles */
+  /* footer {
+    margin: 0;
+    padding: 10px;
+    background-color: transparent;
+    font-family: spline-sans;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  } */
+}
